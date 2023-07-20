@@ -19,9 +19,13 @@ import {
 const Footer = () => {
   return (
     <Box bgColor={'blackAlpha.900'} minH={'40'} p={'16'} color={'white'}>
-      <Stack direction={['column', 'row']}>
+      <Stack direction={['column', 'row']} w={'full'}>
         <VStack alignItems={'stretch'} w={'full'} px={'4'}>
-          <Heading textTransform={'uppercase'} size={'md'}>
+          <Heading
+            textTransform={'uppercase'}
+            size={'md'}
+            textAlign={['center', 'left']}
+          >
             Subscribe to get all updates
           </Heading>
           <HStack borderBottom={'2px solid white'}>
@@ -58,14 +62,22 @@ const Footer = () => {
           </Heading>
 
           <Button variant={'link'} colorScheme="white">
-            <a target="blank" href="https://www.youtube.com/@jmsohelrana6232">
+            <a
+              target="_blank"
+              href="https://www.youtube.com/@jmsohelrana6232"
+              rel="noreferrer"
+            >
               <Text display={'flex'}>
                 <AiOutlineYoutube></AiOutlineYoutube>YouTube
               </Text>
             </a>
           </Button>
           <Button variant={'link'} colorScheme="white">
-            <a target="blank" href="https://github.com/JMSohelRana">
+            <a
+              target="_blank"
+              href="https://github.com/JMSohelRana"
+              rel="noreferrer"
+            >
               <Text display={'flex'}>
                 <AiOutlineGithub></AiOutlineGithub>GitHubb
               </Text>
@@ -73,8 +85,9 @@ const Footer = () => {
           </Button>
           <Button variant={'link'} colorScheme="white">
             <a
-              target="blank"
+              target="_blank"
               href="https://www.linkedin.com/in/jm-sohel-rana-4138bb229/"
+              rel="noreferrer"
             >
               <Text display={'flex'}>
                 <AiFillLinkedin></AiFillLinkedin>LinkedIn
